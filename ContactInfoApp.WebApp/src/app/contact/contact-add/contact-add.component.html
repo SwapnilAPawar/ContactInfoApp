@@ -1,0 +1,57 @@
+<div class="col-md-12">
+  <div class="page-header">
+    <h1>Add Contact</h1>
+    <hr>
+  </div>
+</div>
+<form class="form" novalidate [formGroup]="myContactForm" (ngSubmit)="addContact(myContactForm.value, myContactForm.valid)">
+  <div class="form-group">
+    <label class="control-label col-sm-2" for="firstName">First Name
+      <sup>*</sup>
+    </label>
+    <div class="col-sm-10">
+      <input class="form-control" placeholder="Enter first name" formControlName="firstName" maxlength="50">
+      <div class="form-control-feedback" *ngIf="firstName.errors && (firstName.dirty || firstName.touched)">
+        <p *ngIf="firstName.errors.required">firstName is required.</p>
+      </div>
+    </div>
+  </div>
+  <div class="form-group">
+    <label class="control-label col-sm-2" for="lastName">Last Name
+      <sup>*</sup>
+    </label>
+    <div class="col-sm-10">
+      <input class="form-control" placeholder="Enter last name" formControlName="lastName" maxlength="50">
+      <div class="form-control-feedback" *ngIf="lastName.errors && (lastName.dirty || lastName.touched)">
+        <p *ngIf="lastName.errors.required">lastName is required.</p>
+      </div>
+    </div>
+  </div>
+  <div class="form-group">
+    <label class="control-label col-sm-2" for="email">Email
+      <sup>*</sup>
+    </label>
+    <div class="col-sm-10">
+      <input class="form-control" placeholder="Enter email" formControlName="email" maxlength="200">
+      <div class="form-control-feedback" *ngIf="email.errors && (email.dirty || email.touched)">
+        <p *ngIf="email.errors.required">email is required.</p>
+        <p *ngIf="email.errors.pattern">email is invalid.</p>
+      </div>
+    </div>
+  </div>
+  <div class="form-group">
+    <label class="control-label col-sm-2" for="phoneNumber">Phone Number</label>
+    <div class="col-sm-10">
+      <input class="form-control" placeholder="Enter phone number" formControlName="phoneNumber" maxlength="13">
+      <div class="form-control-feedback" *ngIf="phoneNumber.errors && (phoneNumber.dirty || phoneNumber.touched)">
+        <p *ngIf="phoneNumber.errors.pattern">phone number is invalid.</p>
+      </div>
+    </div>
+  </div>
+  <div class="form-group">
+    <div class="col-sm-offset-2 col-sm-10">
+      <button type="submit" class="btn btn-warning" [disabled]="!myContactForm.valid">Submit</button> &nbsp;
+      <button type="submit" class="btn btn-default" routerLink="/contact/index">Cancel</button>
+    </div>
+  </div>
+</form>

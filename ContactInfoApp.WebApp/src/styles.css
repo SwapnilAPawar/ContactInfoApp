@@ -1,0 +1,111 @@
+
+html {
+    position: relative;
+    min-height: 100%;
+  }
+  body {
+    /* Margin bottom by footer height */
+    margin-bottom: 60px;
+  }
+  .footer {
+    position: absolute;
+    bottom: 0;
+    width: 100%;
+    /* Set the fixed height of the footer here */
+    height: 60px;
+    line-height: 60px; /* Vertically center the text there */
+    background-color: #f5f5f5;
+  }
+  
+  body > .container {
+    padding: 60px 15px 0;    
+  }
+  
+  .footer > .container {
+    padding-right: 15px;
+    padding-left: 15px;
+  }
+  
+  code {
+    font-size: 80%;
+  }
+
+  main.container{
+    margin-top:70px !important;
+    margin-bottom:70px !important;
+  }
+  
+.has-danger .form-control-feedback {
+  color: #d9534f;
+}
+
+.has-danger .custom-control, .has-danger .form-check-inline, .has-danger .form-check-label, .has-danger .form-control-feedback, .has-danger .form-control-label {
+  color: #d9534f;
+}
+
+.form-control-feedback {
+  margin-top: .25rem;
+  position: relative;
+  width: auto;
+  text-align: left;
+  height: auto;
+  color: #d9534f !important;
+}
+
+  .form-control-feedback > p {
+      line-height: 20px !important;
+  }
+
+sup {
+  font-size: 25px !important;
+  top: 0 !important;
+  color: red !important;
+}
+
+ul.pagination {
+  margin-bottom: 0 !important;
+}
+
+.page-item.active .page-link {
+  color: #fff !important;
+  background-color: #ffc107 !important;
+  border-color: #ffc107 !important;
+}
+
+.page-link {
+  color: #ffc107 !important;
+}
+.page-item.disabled .page-link {
+  color: #6c757d !important;
+}
+
+.app-loading {
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  height: 100%;
+  background: #000;
+  position: absolute;
+  top: 0;
+  right: 0;
+  bottom: 0;
+  left: 0;
+  opacity: 0.5;
+  z-index: 10;
+}
+
+  .app-loading .spinner {
+      height: 200px;
+      width: 200px;
+      position: fixed;
+      top: 0;
+      bottom: 0;
+      left: 0;
+      right: 0;
+      margin: auto;
+  }
+
+.table-hover tbody tr:hover {
+    /* background-color: rgba(243, 219, 6, 0.507) !important; */
+    background-color: rgba(255, 212, 83, 0.555) !important;    
+}

@@ -1,0 +1,87 @@
+<div class="col-md-12" *ngIf="data">
+    <div class="page-header">
+        <h1>Contacts</h1>
+        <hr>
+    </div>
+
+
+    <div class="row">
+        <div class="col-md-2 pull-right">
+            <a class="btn btn-warning btn-sm" routerLink="/contact/add" style="position: relative;top: 5px;">
+                <i class="fa fa-plus"></i> Add New</a>
+        </div>
+        <div class="col-md-10 pull-right">
+            <input style="margin-bottom: 5px;" type="text" class="form-control col-md-3 pull-right" [(ngModel)]=filterKey (keyup)="filter()"
+                placeholder="Search …">
+        </div>
+    </div>
+    <table class="table table-bordered table-hover">
+        <thead>
+            <tr class="d-flex">
+                <th class="col-md-2" style="vertical-align: middle">
+                    <a role="button" (click)="sortDataBy('firstName');">First Name
+                        <span [hidden]="sortBy != 'firstName'" class="fa" [ngClass]="{'fa-caret-up':sortBy == 'firstName' && sortAsc,'fa-caret-down': sortBy == 'firstName' && !sortAsc}"></span>
+                    </a>
+                </th>
+                <th class="col-md-2" style="vertical-align: middle">
+                    <a role="button" (click)="sortDataBy('lastName');">Last Name
+                        <span [hidden]="sortBy != 'lastName'" class="fa" [ngClass]="{'fa-caret-up':sortBy == 'lastName' && sortAsc,'fa-caret-down': sortBy == 'lastName' && !sortAsc}"></span>
+                    </a>
+                </th>
+                <th class="col-md-3" style="vertical-align: middle">
+                    <a role="button" (click)="sortDataBy('email');">Email
+                        <span [hidden]="sortBy != 'email'" class="fa" [ngClass]="{'fa-caret-up':sortBy == 'email' && sortAsc,'fa-caret-down': sortBy == 'email' && !sortAsc}"></span>
+                    </a>
+                </th>
+                <th class="col-md-2" style="vertical-align: middle">
+                    <a role="button" (click)="sortDataBy('phoneNumber');">Phone Number
+                        <span [hidden]="sortBy != 'phoneNumber'" class="fa" [ngClass]="{'fa-caret-up':sortBy == 'phoneNumber' && sortAsc,'fa-caret-down': sortBy == 'phoneNumber' && !sortAsc}"></span>
+                    </a>
+                </th>
+                <th class="col-md-1" style="vertical-align: middle">Status </th>
+                <th class="col-md-2" style="vertical-align: middle">
+                    <div class=" text-center">
+                        <i class="fa fa-cog"></i>
+                    </div>
+                </th>
+            </tr>
+        </thead>
+        <tbody>
+            <tr class="d-flex" *ngIf="!pagedData || pagedData.length <= 0; else elseBlock">
+                <td class="col-md-12">No Contacts Available.</td>
+            </tr>
+            <ng-template #elseBlock>
+                <tr class="d-flex" *ngFor="let item of pagedData">
+                    <td class="col-md-2" style="vertical-align: middle">{{item.firstName}}</td>
+                    <td class="col-md-2" style="vertical-align: middle">{{item.lastName}}</td>
+                    <td class="col-md-3" style="vertical-align: middle">{{item.email}}</td>
+                    <td class="col-md-2" style="vertical-align: middle">{{item.phoneNumber}}</td>
+                    <td class="col-md-1" style="vertical-align: middle">{{item.status}}</td>
+                    <td class="col-md-2" style="vertical-align: middle">
+                        <div class=" text-center">
+                            <a class="btn btn-warning btn-sm" routerLink="/contact/edit" [queryParams]="{id:item.id}">
+                                <i class="fa fa-pencil"></i> Edit</a>&nbsp;
+                            <a class="btn btn-warning btn-sm" (click)="deleteContact(item.id)">
+                                <i class="fa fa-trash"></i> Delete</a>
+                        </div>
+                    </td>
+                </tr>
+            </ng-template>
+        </tbody>
+        <tfoot *ngIf="data && data.length > 0;">
+            <tr>
+                <td class="col-md-12">
+                    <div class="row">
+                        <div class="col-md-4">
+                            <span class="pagination-result pad-l-5 pagination-status">Showing {{pager.startIndex + 1}} - {{pager.endIndex + 1}} of {{pager.totalItems}} Results</span>
+                        </div>
+                        <div class="col-md-8">
+                            <ngb-pagination class="d-flex justify-content-end" [collectionSize]="data.length" [(page)]="pager.currentPage" [pageSize]="pageSize"
+                                [maxSize]="5" [boundaryLinks]="true" size="sm" (pageChange)="setPage($event)"></ngb-pagination>
+                        </div>
+                    </div>
+                </td>
+            </tr>
+        </tfoot>
+    </table>
+</div>

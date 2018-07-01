@@ -1,0 +1,11 @@
+D:\PracticeProject\ContactInfoApp\ContactInfoApp\ContactInfoApp.DAL\bin\Debug\ContactInfoApp.DAL.dll.config
+D:\PracticeProject\ContactInfoApp\ContactInfoApp\ContactInfoApp.DAL\bin\Debug\ContactInfoApp.DAL.dll
+D:\PracticeProject\ContactInfoApp\ContactInfoApp\ContactInfoApp.DAL\bin\Debug\ContactInfoApp.DAL.pdb
+D:\PracticeProject\ContactInfoApp\ContactInfoApp\ContactInfoApp.DAL\bin\Debug\EntityFramework.dll
+D:\PracticeProject\ContactInfoApp\ContactInfoApp\ContactInfoApp.DAL\bin\Debug\EntityFramework.SqlServer.dll
+D:\PracticeProject\ContactInfoApp\ContactInfoApp\ContactInfoApp.DAL\bin\Debug\EntityFramework.xml
+D:\PracticeProject\ContactInfoApp\ContactInfoApp\ContactInfoApp.DAL\bin\Debug\EntityFramework.SqlServer.xml
+D:\PracticeProject\ContactInfoApp\ContactInfoApp\ContactInfoApp.DAL\obj\Debug\ContactInfoApp.DAL.csproj.CoreCompileInputs.cache
+D:\PracticeProject\ContactInfoApp\ContactInfoApp\ContactInfoApp.DAL\obj\Debug\ContactInfoApp.DAL.csproj.CopyComplete
+D:\PracticeProject\ContactInfoApp\ContactInfoApp\ContactInfoApp.DAL\obj\Debug\ContactInfoApp.DAL.dll
+D:\PracticeProject\ContactInfoApp\ContactInfoApp\ContactInfoApp.DAL\obj\Debug\ContactInfoApp.DAL.pdb

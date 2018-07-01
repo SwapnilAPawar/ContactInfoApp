@@ -1,0 +1,15 @@
+D:\PracticeProject\ContactInfoApp\ContactInfoApp\ContactInfoApp.BAL\bin\Debug\ContactInfoApp.BAL.dll.config
+D:\PracticeProject\ContactInfoApp\ContactInfoApp\ContactInfoApp.BAL\bin\Debug\ContactInfoApp.BAL.dll
+D:\PracticeProject\ContactInfoApp\ContactInfoApp\ContactInfoApp.BAL\bin\Debug\ContactInfoApp.BAL.pdb
+D:\PracticeProject\ContactInfoApp\ContactInfoApp\ContactInfoApp.BAL\bin\Debug\ContactInfoApp.DAL.dll
+D:\PracticeProject\ContactInfoApp\ContactInfoApp\ContactInfoApp.BAL\bin\Debug\EntityFramework.dll
+D:\PracticeProject\ContactInfoApp\ContactInfoApp\ContactInfoApp.BAL\bin\Debug\EntityFramework.SqlServer.dll
+D:\PracticeProject\ContactInfoApp\ContactInfoApp\ContactInfoApp.BAL\bin\Debug\ContactInfoApp.DAL.pdb
+D:\PracticeProject\ContactInfoApp\ContactInfoApp\ContactInfoApp.BAL\bin\Debug\ContactInfoApp.DAL.dll.config
+D:\PracticeProject\ContactInfoApp\ContactInfoApp\ContactInfoApp.BAL\bin\Debug\EntityFramework.xml
+D:\PracticeProject\ContactInfoApp\ContactInfoApp\ContactInfoApp.BAL\bin\Debug\EntityFramework.SqlServer.xml
+D:\PracticeProject\ContactInfoApp\ContactInfoApp\ContactInfoApp.BAL\obj\Debug\ContactInfoApp.BAL.csprojAssemblyReference.cache
+D:\PracticeProject\ContactInfoApp\ContactInfoApp\ContactInfoApp.BAL\obj\Debug\ContactInfoApp.BAL.csproj.CoreCompileInputs.cache
+D:\PracticeProject\ContactInfoApp\ContactInfoApp\ContactInfoApp.BAL\obj\Debug\ContactInfoApp.BAL.csproj.CopyComplete
+D:\PracticeProject\ContactInfoApp\ContactInfoApp\ContactInfoApp.BAL\obj\Debug\ContactInfoApp.BAL.dll
+D:\PracticeProject\ContactInfoApp\ContactInfoApp\ContactInfoApp.BAL\obj\Debug\ContactInfoApp.BAL.pdb
